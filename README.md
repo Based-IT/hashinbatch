@@ -16,7 +16,7 @@ Output directed to stdout for easier commandline integration.
 
 
 ##### EXAMPLE:
-> python hash.py hashme.txt md5
+`python hash.py hashme.txt md5 `
 > 
 > hashme.txt:
 ```
