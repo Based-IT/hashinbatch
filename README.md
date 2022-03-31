@@ -17,15 +17,15 @@ Output directed to stdout for easier commandline integration.
 
 ##### EXAMPLE:
 > python hash.py hashme.txt md5
-
-hashme.txt:
+> 
+> hashme.txt:
 ```
 password123
 jeremyberemy
 iloveyou
 ````
-
-stdout:
+> 
+> stdout:
 ```
 482c811da5d5b4bc6d497ffa98491e38 --> password123
 5472776b0d5911c9a918eb4ea82e324d --> jeremyberemy
