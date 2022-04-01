@@ -1,6 +1,20 @@
 import hashlib
 import sys
 
+
+"""
+Hash in Batch - written late at night on a thursday
+
+Usage: python hash.py "file-name" "hash-type"
+
+SUPPORTED METHODS:
+
+md5, md4, ntlm
+sha1, sha224, sha256, sha384, sha512
+blake2b, blake2s
+
+"""
+
 file_name = str(sys.argv[1])  #file-name
 
 hash_type = str(sys.argv[2]).lower()  #hash-type
@@ -90,6 +104,7 @@ with open(sys.argv[1], "r") as f:
             
             line = line.strip()
             print(f'{hashlib.sha1(line.encode()).hexdigest()} --> {line}')
+            
     #ntlm
     elif hash_type == 'ntlm':
         
