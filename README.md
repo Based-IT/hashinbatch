@@ -1,4 +1,4 @@
-# muchhash
+# Hash in Batch
 Script to generate hashes in batch from a plain text file. Useful for brute force cracking.
 Output directed to stdout for easier commandline integration.
 
@@ -8,15 +8,15 @@ Output directed to stdout for easier commandline integration.
 
 
 ##### SUPPORTED HASHES:
-> md5
+> md5, md4, ntlm
 > 
-> NTLM (md4, utf-16le encoding)
+> sha1, sha224, sha256, sha384, sha512
 > 
-> other stuff ill get to later
+> blake2b, blake2s
 
 
 ##### EXAMPLE:
-`python hash.py hashme.txt md5 `
+`python hash.py hashme.txt md5 > hashes.txt`
 > 
 > hashme.txt:
 ```
@@ -25,9 +25,10 @@ jeremyberemy
 iloveyou
 ````
 > 
-> stdout:
+> hashes.txt
 ```
 482c811da5d5b4bc6d497ffa98491e38 --> password123
 5472776b0d5911c9a918eb4ea82e324d --> jeremyberemy
 f25a2fc72690b780b2a14e140ef6a9e0 --> iloveyou
 ```
+
